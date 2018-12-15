@@ -21,4 +21,11 @@ public class player : MonoBehaviour {
         }
 
     }
+	void OnTriggerEnter(Collider other){
+
+		if (other.tag == "Wall") {
+			Application.LoadLevel (Application.loadedLevel);
+		
+}
+	}
 }

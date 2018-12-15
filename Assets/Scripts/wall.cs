@@ -5,6 +5,7 @@ using UnityEngine;
 public class wall : MonoBehaviour {
 
     public Vector3 spawnPoint;
+	public int speed = 1;
 
 	private Transform camPos;
 	private int ranXPos = Random.Range(-5,6);
@@ -18,7 +19,7 @@ public class wall : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.position += Vector3.back;
+        transform.position += Vector3.back * speed;
         if (transform.position.z < camPos.position.z)
         {
             Destroy(gameObject);
