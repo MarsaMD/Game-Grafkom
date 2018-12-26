@@ -20,4 +20,9 @@ public class Score : MonoBehaviour
         score += Time.deltaTime;
         scoreText.text = ((int)score).ToString();
     }
+    public void KenaWalang()
+    {
+       score += 10;
+       scoreText.text = ((int)score).ToString();
+	}
 }

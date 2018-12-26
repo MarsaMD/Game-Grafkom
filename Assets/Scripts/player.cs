@@ -49,10 +49,15 @@ public class player : MonoBehaviour {
 	void OnTriggerEnter(Collider other){
     
 		if (other.tag == "Ular"){
-			Application.LoadLevel (Application.loadedLevel);
+			Debug.Log ("Nabrak Uler");
+            FindObjectOfType<Health>().KenaUler();
+            // Application.LoadLevel (Application.loadedLevel);
         }
         else if (other.tag == "Walang"){
-			Application.LoadLevel (Application.loadedLevel);
+            Debug.Log ("Nabrak Walang");
+            FindObjectOfType<Score>().KenaWalang();
+        	// Application.LoadLevel (Application.loadedLevel);
+        
         }
 	}
 }
