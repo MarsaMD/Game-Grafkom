@@ -8,7 +8,8 @@ public class gameManager : MonoBehaviour {
     private int timer;
     // Use this for initialization
     void Start () {
-        BuatWall();
+        BuatUlar();
+        BuatWalang();
     }
 	
 	// Update is called once per frame
@@ -16,12 +17,17 @@ public class gameManager : MonoBehaviour {
         timer++;
         if (timer >= spawnTime)
         {
-            BuatWall();
+            BuatUlar();
+            BuatWalang();
             timer = 0;
         }
     }
-    void BuatWall()
+    void BuatUlar()
     {
-        Instantiate(Resources.Load("Wall"));
+        Instantiate(Resources.Load("Ular"));
+    }
+    void BuatWalang()
+    {
+        Instantiate(Resources.Load("Walang"));
     }
 }

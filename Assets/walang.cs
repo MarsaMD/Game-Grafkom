@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class wall : MonoBehaviour {
+public class walang : MonoBehaviour {
 
     public Vector3 spawnPoint;
 	public int speed = 1;

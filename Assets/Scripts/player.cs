@@ -48,9 +48,11 @@ public class player : MonoBehaviour {
     }
 	void OnTriggerEnter(Collider other){
     
-		if (other.tag == "Wall") {
+		if (other.tag == "Ular"){
 			Application.LoadLevel (Application.loadedLevel);
-		
-}
+        }
+        else if (other.tag == "Walang"){
+			Application.LoadLevel (Application.loadedLevel);
+        }
 	}
 }
