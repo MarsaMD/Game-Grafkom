@@ -102,6 +102,7 @@
     <Compile Include="Assets\Scripts\gameManager.cs" />
     <Compile Include="Assets\Scripts\player.cs" />
     <Compile Include="Assets\Scripts\wall.cs" />
+    <Compile Include="Assets\walang.cs" />
     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
@@ -185,11 +186,11 @@
     <Reference Include="Unity.PackageManagerUI.Editor">
       <HintPath>D:/File kk/IPB/Ilkom/Semester 5/KOM300 Grafika Komputer/Project/Game-Grafkom/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/File kk/IPB/Ilkom/Semester 5/KOM300 Grafika Komputer/Project/Game-Grafkom/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>D:/File kk/IPB/Ilkom/Semester 5/KOM300 Grafika Komputer/Project/Game-Grafkom/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>D:/File kk/IPB/Ilkom/Semester 5/KOM300 Grafika Komputer/Project/Game-Grafkom/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
       <HintPath>D:/File kk/IPB/Ilkom/Semester 5/KOM300 Grafika Komputer/Project/Game-Grafkom/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
