@@ -5,11 +5,10 @@ using UnityEngine;
 public class walang : MonoBehaviour {
 
     public Vector3 spawnPoint;
-	public int speed = 1;
 
+    private int ranXPos;
 	private Transform camPos;
-	private int ranXPos;
-
+	
     // Use this for initialization
     void Start () {
 		ranXPos = Random.Range(-2, 2);
@@ -19,10 +18,12 @@ public class walang : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.position += Vector3.back * speed;
+        transform.position += Vector3.back * 50 * Time.deltaTime;
         if (transform.position.z < camPos.position.z)
         {
             Destroy(gameObject);
         }
     }
+
+
 }

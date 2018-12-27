@@ -5,6 +5,7 @@ using UnityEngine;
 public class gameManager : MonoBehaviour {
 
     public int spawnTime;
+
     private int timer;
     // Use this for initialization
     void Start () {
@@ -14,8 +15,9 @@ public class gameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        timer++;
-        if (timer >= spawnTime)
+
+        timer++ ;
+        if (timer >= spawnTime )
         {
             BuatUlar();
             BuatWalang();
@@ -30,4 +32,6 @@ public class gameManager : MonoBehaviour {
     {
         Instantiate(Resources.Load("Walang"));
     }
+
+
 }
