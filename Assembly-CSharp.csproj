@@ -102,6 +102,8 @@
     <Compile Include="Assets\Scripts\gameManager.cs" />
     <Compile Include="Assets\Scripts\Health.cs" />
     <Compile Include="Assets\Scripts\LoadSceneOnClick.cs" />
+    <Compile Include="Assets\Scripts\MusicVolumeSlider.cs" />
+    <Compile Include="Assets\Scripts\PauseScript.cs" />
     <Compile Include="Assets\Scripts\player.cs" />
     <Compile Include="Assets\Scripts\QuitOnClick.cs" />
     <Compile Include="Assets\Scripts\Score.cs" />
