@@ -25,4 +25,12 @@ public class Score : MonoBehaviour
        score += 10;
        scoreText.text = ((int)score).ToString();
 	}
+
+    public void Mati()
+    {
+        if(PlayerPrefs.GetFloat ("Highscore") < score)
+             PlayerPrefs.SetFloat ("Highscore", score);
+
+        Application.LoadLevel (Application.loadedLevel);
+    }
 }

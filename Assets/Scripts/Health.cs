@@ -12,7 +12,7 @@ public class Health : MonoBehaviour
     void Start()
     {
     score = 3;
-    scoreText.text = ((int)score).ToString();
+    scoreText.text = "Health : " + ((int)score).ToString();
     }
 
     // Update is called once per frame
@@ -20,11 +20,11 @@ public class Health : MonoBehaviour
     {
         if (score > 1){ 
        score -= 1;
-       scoreText.text = ((int)score).ToString();
+       scoreText.text = "Health : " + ((int)score).ToString();
         }
 
         else {
-        Application.LoadLevel (Application.loadedLevel);
+        FindObjectOfType<Score>().Mati();
         }
 	}
 
