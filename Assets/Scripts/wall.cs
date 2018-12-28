@@ -8,11 +8,20 @@ public class wall : MonoBehaviour {
 
     private int ranXPos;
 	private Transform camPos;
+    public int walang;
+    private int posisiU;
 
     // Use this for initialization
     void Start () {
+        walang = FindObjectOfType<walang>().PosisiWalang();
+        
 
-        ranXPos = Random.Range(-2, 2);
+        posisiU = Random.Range(-2, 2);
+        if (posisiU == walang)
+        {
+            posisiU = posisiU + 1;
+        }
+        ranXPos = posisiU +1;
         transform.position = new Vector3(ranXPos,spawnPoint.y,spawnPoint.z);
         camPos = GameObject.Find ("Main Camera").GetComponent<Transform> ();
 

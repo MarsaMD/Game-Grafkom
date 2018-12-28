@@ -9,7 +9,7 @@ public class PauseScript : MonoBehaviour
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
 
-    private AudioSource audioSource;
+    public AudioSource audioSource;
 
     void Start()
     {

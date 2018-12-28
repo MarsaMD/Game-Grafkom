@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Score : MonoBehaviour
 {
@@ -30,7 +31,8 @@ public class Score : MonoBehaviour
     {
         if(PlayerPrefs.GetFloat ("Highscore") < score)
              PlayerPrefs.SetFloat ("Highscore", score);
-
-        Application.LoadLevel (Application.loadedLevel);
+        int sceneIndex = 2;
+        SceneManager.LoadScene(sceneIndex);
+        
     }
 }

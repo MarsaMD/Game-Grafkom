@@ -8,10 +8,12 @@ public class walang : MonoBehaviour {
 
     private int ranXPos;
 	private Transform camPos;
+    private int posisiW;
 	
     // Use this for initialization
     void Start () {
 		ranXPos = Random.Range(-2, 2);
+        posisiW = ranXPos;
         transform.position = new Vector3(ranXPos,spawnPoint.y,spawnPoint.z);
         camPos = GameObject.Find ("Main Camera").GetComponent<Transform> ();
     }
@@ -23,6 +25,11 @@ public class walang : MonoBehaviour {
         {
             Destroy(gameObject);
         }
+    }
+
+    public int PosisiWalang()
+    {
+        return posisiW;
     }
 
 
